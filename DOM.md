@@ -75,6 +75,24 @@ Seleciona o objeto e disponibiliza (métodos / funções).callback
 - console.log()
 - window.scrollTo()
 
+## Seletores
+- Tipos de seletores: Tag, ID, Class, Name, Query
+- Callback
+- getElementById
+- getElementByTagName()
+- getElementByName()
+- getElementByClassName()
+- querySelectorAll() // #id | .class
+
+## Formutários
+- Precisamos evitar que o usuário passe dados incorretos
+- Ou seja, para direcionar melhor o uso do nosso sistema
+- Proteger a injeção de código malicioso
+- Evitar erros de processamento
+- Formatar dados para facilitar o processamento
+- Regex (expressões regulares)
+
+
 ### Referências
 - DOM: https://dom.spec.whatwg.org/
 - Tecnologias JS: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
