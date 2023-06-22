@@ -24,3 +24,15 @@ header {
     color: black;
     font-weight: bold;
 }
+
+h3 {
+    color: blueviolet;
+    font-weight: bold;
+    -webkit-text-stroke: 0.6px #FFF;
+}
+
+.texto {
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px #FFF;
+    color: rgb(187, 49, 252);
+}

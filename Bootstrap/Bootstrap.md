@@ -73,3 +73,12 @@
     </style>
 
 ```
+
+## Componentes
+- Blocos / Modelos / Templates reutilizáveis
+
+
+## Helpers
+- Funções básicas
+- Incrementos
+- Ajustes
