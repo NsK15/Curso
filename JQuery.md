@@ -10,3 +10,18 @@
 - Facilita a consulta (query) a elementos
 - Extensível com plugins
 - Instalação: https://jquery.com/download/
+
+## Seletores
+## Simples
+```
+    $(' h4') // tag
+    $('.featured-item') // class vem com ponto antes
+    $('#featured') // id com a hashtag
+```
+
+### Compostos
+```
+    $('h4, h6')
+
+    $('div h4')
+```
