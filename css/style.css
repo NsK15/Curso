@@ -85,8 +85,13 @@ a {
     z-index: 999;
     position: absolute;
     left: 50%;
-    top: 105px;
+    top: 200px;
     transform: translateX(-50%);
+}
+
+.middle {
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 .navbar-dark .navbar-nav .nav-item {
@@ -234,7 +239,10 @@ a {
     outline: none;
 }
 
-
+.info {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 /* Subscribe Style */
 .subscribe-form {
