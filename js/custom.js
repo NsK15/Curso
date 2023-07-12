@@ -35,7 +35,8 @@ console.log(titulos.first());
 /*
 * Manipulação de eventos
 */
-$('.featured-item a').on('click', function (event) {
+
+$('.alert').on('click', function (event) {
     event.preventDefault();
 
     alert('Produto Esgotado');
