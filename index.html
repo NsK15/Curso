@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./Vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./Vendor/fontawesome/fontawesome.css">
-    <title>jQuery</title>
+    <title>Neemias's Burguers</title>
 </head>
 
 <body>
@@ -31,10 +31,10 @@
                         <a class="nav-link" href="products.html">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contato</a>
+                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -309,6 +309,28 @@
             </div>
         </div>
     </div>
+    <div class="col-md-8 offset-md-2">
+        <div class="main-content">
+            <p>Insira seus dados abaixo para receber promoções dos nossos Hamburguers</p>
+            <div class="container">
+                <form id="subscribe" class="form" action="" method="get">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <fieldset>
+                                <input name="email" type="text" class="form-control" id="email"
+                                    placeholder="Seu email aqui">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-5">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
         <div class="container">
@@ -348,11 +370,62 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright-text">
-                        <p>WebStore &copy; Todos os direitos reservados
+                        <p>WebStore &copy; Todos os direitos reservados</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="visually-hidden">
+
+        <form action="post" class="form">
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome"
+                    aria-describedby="helpNome">
+                <small id="helpNome" class="text-muted">
+                    Digite um nome válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="e-mail" class="form-label">Email</label>
+                <input type="text" name="e-mail" id="e-mail" class="form-control" placeholder="Digite seu email"
+                    aria-describedby="helpEmail">
+                <small id="helpEmail" class="text-muted">
+                    Digite um nome válido
+                </small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+
+    </div>
+
+    <div id="sobre" class="visually-hidden">
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quo reiciendis nemo itaque cupiditate
+            recusandae non praesentium, dolor suscipit illo, at, eius natus dignissimos cumque vel facere harum culpa
+            ullam!</p>
+
     </div>
 
     <script src="./Vendor/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
