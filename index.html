@@ -377,9 +377,8 @@
         </div>
     </div>
 
-    <!-- Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -387,7 +386,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
                 </div>
             </div>
         </div>
@@ -399,18 +397,18 @@
 
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome"
-                    aria-describedby="helpNome">
+                <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control"
+                    placeholder="Digite seu nome" aria-describedby="helpNome">
                 <small id="helpNome" class="text-muted">
                     Digite um nome válido
                 </small>
             </div>
             <div class="mb-3">
-                <label for="e-mail" class="form-label">Email</label>
-                <input type="text" name="e-mail" id="e-mail" class="form-control" placeholder="Digite seu email"
+                <label for="email" class="form-label">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail"
                     aria-describedby="helpEmail">
                 <small id="helpEmail" class="text-muted">
-                    Digite um nome válido
+                    Digite um e-mail válido
                 </small>
             </div>
 

@@ -81,26 +81,24 @@ $('#form-submit').on('click', function (e) {
         })
     }
 
-    /*
-    * Ouvinte de eventos .nav-modal-open
-    */
-    $('.nav-modal-open').on('click', function (e) {
+});
 
-        e.preventDefault();
+/*
+* Ouvinte de eventos .nav-modal-open
+*/
+$('.nav-modal-open').on('click', function (e) {
 
-        let elem = $(this).attr('rel')
+    e.preventDefault();
 
-        $('.modal-body').html($('#' + elem).html())
+    let elem = $(this).attr('rel')
 
-        $('.modal-header h5.modal-title').html($(this).text())
+    $('.modal-body').html($('#' + elem).html())
 
-        let myModal = new bootstrap.Modal($('#modelId'))
+    $('.modal-header h5.modal-title').html($(this).text())
 
-        myModal.show()
+    let myModal = new bootstrap.Modal($('#modelId'))
 
-
-    })
-
+    myModal.show()
 
 
 })
