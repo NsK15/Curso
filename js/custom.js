@@ -91,14 +91,17 @@ $('#form-submit').on('click', function (e) {
         let elem = $(this).attr('rel')
 
         $('.modal-body').html($('#' + elem).html())
+
         $('.modal-header h5.modal-title').html($(this).text())
 
-        let myModal = new bootstrap.Modal($('#modalId'))
+        let myModal = new bootstrap.Modal($('#modelId'))
 
         myModal.show()
 
 
     })
+
+
 
 })
 
