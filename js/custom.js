@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     /* Callback
     * Entendendo ações que começam ao termino de outra
-    */
+    
     $('.featured-item:nth(1)')
         .hide(2000, function () {
             // este é o callback
@@ -52,13 +52,14 @@ $(document).ready(function () {
         .show(2000, function () {
             console.log($(this).find('h4').text() + ' em esgotado')
         })
-
+    */
 
     /*
     * Animações
     */
     const duracao = 1000 // equivalente a 1 segundo
 
+    /*
     $('.featured-item:nth(0)')
         .hide(duracao)
         .show(duracao)
@@ -66,6 +67,7 @@ $(document).ready(function () {
         .fadeIn(duracao)
         .toggle(duracao)
         .toggle(duracao)
+    */
 
     $('#form-submit').on('click', function (e) {
 
@@ -143,10 +145,6 @@ $(document).ready(function () {
 
     $('body').on('blur', '#email', function () {
         validate($(this))
-    })
-
-    $('body').on('focus', '#date', function () {
-        $(this).datepicker()
     })
 
     $('body').on('blur', '#date', function () {
