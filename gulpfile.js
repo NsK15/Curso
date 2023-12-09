@@ -7,8 +7,14 @@ const image = require('gulp-image')
 
 function tarefasCSS(cb) {
 
-    return gulp.src('./vendor/**/*.css')
-        .pipe(concat('libs.css'))
+    return gulp.src([
+        './node_modules/bootstrap/dist/css/bootstrap.css',
+        './vendor/owl/css/owl.css',
+        './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
+        './vendor/jquery-ui/jquery-ui.css',
+        './src/css/style.css'
+    ])
+        .pipe(concat('styles.css'))
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min' })) // libs.min.css
         .pipe(gulp.dest('./dist/css'))  // pipe é um método de tratamento de dados
@@ -17,8 +23,16 @@ function tarefasCSS(cb) {
 
 function tarefasJS() {
 
-    return gulp.src('./vendor/**/*.js')
-        .pipe(concat('libs.js'))
+    return gulp.src([
+        './node_modules/jquery/dist/jquery.js',
+        './node_modules/bootstrap/dist/js/bootstrap.js',
+        './Vendor/owl/js/owl.js',
+        './Vendor/jquery-mask/jquery.mask.js',
+        './Vendor/jquery-ui/jquery-ui.js',
+        './src/js/custom.js'
+
+    ])
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' })) // libs.min.js
         .pipe(gulp.dest('./dist/js'))
