@@ -9,7 +9,7 @@ function tarefasCSS(cb) {
 
     return gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.css',
-        './vendor/owl/css/owl.css',
+        // './vendor/owl/css/owl.css',
         './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
         './vendor/jquery-ui/jquery-ui.css',
         './src/css/style.css'
@@ -26,7 +26,7 @@ function tarefasJS() {
     return gulp.src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/bootstrap/dist/js/bootstrap.js',
-        './Vendor/owl/js/owl.js',
+        // './Vendor/owl/js/owl.js',
         './Vendor/jquery-mask/jquery.mask.js',
         './Vendor/jquery-ui/jquery-ui.js',
         './src/js/custom.js'
